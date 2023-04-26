@@ -62,7 +62,7 @@
             minutes: remainingMinutes
         };
     }
-    
+
     function formatTimePlayedString(timePlayed) {
         let timePlayedString = "";
         let timeComponents = [];
