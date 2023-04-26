@@ -6,8 +6,8 @@
 // @author       @LeX
 // @match        https://www.gametracker.com/player/*
 // @grant        none
-// @updateURL    https://your-github-url-here/raw/main/your-script-name.user.js
-// @downloadURL  https://your-github-url-here/raw/main/your-script-name.user.js
+// @updateURL    https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
+// @downloadURL  https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
 // ==/UserScript==
 
