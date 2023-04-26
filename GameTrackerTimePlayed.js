@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GameTracker Time Played
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Displays the time played in days, hours, and minutes for a player on GameTracker.
 // @author       @LeX
 // @match        https://www.gametracker.com/player/*
@@ -12,15 +12,12 @@
 // @source       https://github.com/ALeX400/UserScripts/blob/main/GameTrackerTimePlayed.js
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
-
     const sectionTitles = document.querySelectorAll('div.section_title');
-
     for (const sectionTitle of sectionTitles) {
         if (sectionTitle.textContent.includes("ALL TIME STATS")) {
             const itemColorTitles = sectionTitle.parentElement.querySelectorAll('span.item_color_title');
-
             for (const title of itemColorTitles) {
                 if (title.textContent.includes("Minutes Played:")) {
                     const minutesPlayedText = title.nextSibling;
@@ -46,7 +43,6 @@
             break;
         }
     }
-
     function convertMinutesToTimePlayed(minutes) {
         const minutesInHour = 60;
         const hoursInDay = 24;
@@ -62,7 +58,6 @@
             minutes: remainingMinutes
         };
     }
-
     function formatTimePlayedString(timePlayed) {
         let timePlayedString = "";
         let timeComponents = [];
