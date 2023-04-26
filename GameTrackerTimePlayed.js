@@ -9,10 +9,8 @@
 // @updateURL    https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @downloadURL  https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
+// @source       https://github.com/ALeX400/UserScripts/blob/main/GameTrackerTimePlayed.js
 // ==/UserScript==
-
-// Rest of the script
-
 
 (function() {
     'use strict';
