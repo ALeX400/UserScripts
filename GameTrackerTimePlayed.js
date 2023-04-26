@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         GameTracker Time Played
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Displays the time played in days, hours, and minutes for a player on GameTracker.
 // @author       @LeX
 // @match        https://www.gametracker.com/player/*
+// @icon         https://www.gametracker.com/images/icons/icon16x16_gt.png
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @downloadURL  https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
