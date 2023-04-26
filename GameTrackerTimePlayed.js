@@ -64,16 +64,27 @@
             minutes: remainingMinutes
         };
     }
-
+    
     function formatTimePlayedString(timePlayed) {
         let timePlayedString = "";
+        let timeComponents = [];
+
         if (timePlayed.days > 0) {
-            timePlayedString += `${timePlayed.days} ${timePlayed.days === 1 ? 'day' : 'days'}, `;
+            timeComponents.push(`${timePlayed.days} ${timePlayed.days === 1 ? 'day' : 'days'}`);
         }
         if (timePlayed.hours > 0) {
-            timePlayedString += `${timePlayed.hours} ${timePlayed.hours === 1 ? 'hour' : 'hours'}, `;
+            timeComponents.push(`${timePlayed.hours} ${timePlayed.hours === 1 ? 'hour' : 'hours'}`);
         }
-        timePlayedString += `${timePlayed.minutes} ${timePlayed.minutes === 1 ? 'minute' : 'minutes'}`;
+        if (timePlayed.minutes > 0) {
+            timeComponents.push(`${timePlayed.minutes} ${timePlayed.minutes === 1 ? 'minute' : 'minutes'}`);
+        }
+
+        if (timeComponents.length > 1) {
+            const lastComponent = timeComponents.pop();
+            timePlayedString = timeComponents.join(', ') + ' and ' + lastComponent;
+        } else {
+            timePlayedString = timeComponents[0];
+        }
 
         return timePlayedString;
     }
