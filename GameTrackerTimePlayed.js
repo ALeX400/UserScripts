@@ -14,7 +14,7 @@
 // @icon             https://www.gametracker.com/images/icons/icon16x16_gt.png
 // @grant            none
 // @require          https://code.jquery.com/jquery-3.6.0.min.js
-// @source           https://github.com/ALeX400/UserScripts/blob/main/GameTrackerTimePlayed.js
+// @source           https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @license          MIT
 // ==/UserScript==
 
