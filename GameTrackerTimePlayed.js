@@ -2,7 +2,7 @@
 // @name             GameTracker Time Played
 // @namespace        http://www.tampermonkey.net/
 // @homepage         https://greasyfork.org/ro/scripts/465218-gametracker-time-played
-// @version          1.8
+// @version          1.9
 // @description      Displays the time played in days, hours, and minutes for a player on GameTracker.
 // @match            https://www.gametracker.com/player/*
 // @icon             https://www.gametracker.com/images/icons/icon16x16_gt.png
