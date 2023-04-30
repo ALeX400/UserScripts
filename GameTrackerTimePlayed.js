@@ -1,20 +1,22 @@
 // ==UserScript==
-// @name         GameTracker Time Played
-// @name:ro      GameTracker Time Played
-// @name:es      Tiempo de juego en GameTracker
-// @name:pl      Czas gry w GameTracker
-// @namespace    http://tampermonkey.net/
-// @version      1.7
-// @description  Displays the time played in days, hours, and minutes for a player on GameTracker.
-// @author       @LeX
-// @match        https://www.gametracker.com/player/*
-// @icon         https://www.gametracker.com/images/icons/icon16x16_gt.png
-// @grant        none
-// @updateURL    https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
-// @downloadURL  https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
-// @require      https://code.jquery.com/jquery-3.6.0.min.js
-// @source       https://github.com/ALeX400/UserScripts/blob/main/GameTrackerTimePlayed.js
-// @license      MIT
+// @name             GameTracker Time Played
+// @name:ro          GameTracker Time Played
+// @name:es          Tiempo de juego en GameTracker
+// @name:pl          Czas gry w GameTracker
+// @namespace        http://tampermonkey.net/
+// @version          1.7
+// @description      Displays the time played in days, hours, and minutes for a player on GameTracker.
+// @description:ro   Afișează timpul jucat în zile, ore și minute pentru un jucător pe GameTracker.
+// @description:es   Muestra el tiempo jugado en días, horas y minutos para un jugador en GameTracker.
+// @description:pl   Wyświetla czas gry w dniach, godzinach i minutach dla gracza na GameTrackerze.
+// @match            https://www.gametracker.com/player/*
+// @icon             https://www.gametracker.com/images/icons/icon16x16_gt.png
+// @grant            none
+// @updateURL        https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
+// @downloadURL      https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
+// @require          https://code.jquery.com/jquery-3.6.0.min.js
+// @source           https://github.com/ALeX400/UserScripts/blob/main/GameTrackerTimePlayed.js
+// @license          MIT
 // ==/UserScript==
 
 (function () {
@@ -90,4 +92,3 @@
         return timePlayedString;
     }
 })();
-
