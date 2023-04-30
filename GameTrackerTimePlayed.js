@@ -1,7 +1,10 @@
 // ==UserScript==
 // @name         GameTracker Time Played
+// @name:ro      GameTracker Time Played
+// @name:es      Tiempo de juego en GameTracker
+// @name:pl      Czas gry w GameTracker
 // @namespace    http://tampermonkey.net/
-// @version      1.6
+// @version      1.7
 // @description  Displays the time played in days, hours, and minutes for a player on GameTracker.
 // @author       @LeX
 // @match        https://www.gametracker.com/player/*
