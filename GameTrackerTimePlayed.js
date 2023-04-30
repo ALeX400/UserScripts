@@ -22,22 +22,25 @@
             for (const title of itemColorTitles) {
                 if (title.textContent.includes("Minutes Played:")) {
                     const minutesPlayedText = title.nextSibling;
-                    const minutesPlayed = parseInt(minutesPlayedText.textContent.trim(), 10);
+                    const minutesPlayed = parseInt(minutesPlayedText.textContent, 10);
                     const timePlayed = convertMinutesToTimePlayed(minutesPlayed);
                     const timePlayedString = formatTimePlayedString(timePlayed);
 
+
+                    const separator = "\n\t\t\t\t\t\t\t";
+
                     const totalTimeTitle = document.createElement('span');
-                    totalTimeTitle.className = 'item_color_title';
-                    totalTimeTitle.textContent = 'Total Time:';
+                    totalTimeTitle.classList.add('item_color_title');
 
-                    const totalTimeText = document.createElement('span');
-                    totalTimeText.textContent = ` ${timePlayedString}`;
+                    const totalTimeText = document.createTextNode(`${separator}Total Time:${separator}`);
+                    totalTimeTitle.appendChild(totalTimeText);
 
-                    const lineBreak1 = document.createElement('br');
+                    const totalTimeNum = document.createTextNode(`${separator}${timePlayedString}${separator}`);
 
-                    title.parentElement.insertBefore(lineBreak1, minutesPlayedText.nextSibling);
-                    title.parentElement.insertBefore(totalTimeTitle, lineBreak1.nextSibling);
-                    title.parentElement.insertBefore(totalTimeText, totalTimeTitle.nextSibling);
+                    title.parentElement.insertBefore(document.createElement('br'), minutesPlayedText.nextSibling);
+                    title.parentElement.insertBefore(totalTimeTitle, minutesPlayedText.nextSibling.nextSibling);
+                    title.parentElement.insertBefore(totalTimeNum, totalTimeTitle.nextSibling);
+
                     break;
                 }
             }
