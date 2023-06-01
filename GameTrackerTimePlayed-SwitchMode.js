@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name             GameTracker Time Played with Switch Mode
 // @namespace        http://www.tampermonkey.net/
-// @homepage         https://greasyfork.org/ro/scripts/465218-gametracker-time-played
 // @version          2.6
 // @description      Displays the time played in different formats and provides a switch mode for a player on GameTracker.
 // @match            https://www.gametracker.com/player/*
@@ -9,10 +8,8 @@
 // @grant            none
 // @require          https://code.jquery.com/jquery-3.6.0.min.js
 // @require          https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js
-// @source           https://raw.githubusercontent.com/ALeX400/UserScripts/main/GameTrackerTimePlayed.js
 // @license          MIT
 // ==/UserScript==
-
 
 (function () {
 	'use strict';
