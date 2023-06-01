@@ -2,7 +2,7 @@
 // @name             GameTracker Time Played with Switch Mode
 // @namespace        http://www.tampermonkey.net/
 // @homepage         https://greasyfork.org/ro/scripts/467647-gametracker-time-played-with-switch-mode
-// @version          2.6
+// @version          2.7
 // @description      Displays the time played in different formats and provides a switch mode for a player on GameTracker.
 // @match            https://www.gametracker.com/player/*
 // @icon             https://www.gametracker.com/images/icons/icon16x16_gt.png
